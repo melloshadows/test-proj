@@ -57,13 +57,59 @@
             figcaption{
                 text-align: center;
             }
+
+            @media screen and (max-width: 576px) {
+
+                html {
+                    display: flex;
+                    min-height: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    /* font-size: x-small; */
+                    background-image: linear-gradient(hsl(0, 27%, 39%), hsl(202, 7%, 22%));
+                }
+
+                br{
+                    display: none;
+                }
+
+                figure {
+                    margin: 20px;
+                    display: inline-flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin-left: 30px;
+                }
+
+                div {
+                    background-color: rgb(255, 0, 0);
+                    height: 50px;
+                    width: 50px;
+                    margin: 10px; /* Adjusted margin */
+                    border: 4px rgb(82, 58, 58) solid;
+                    border-radius: 25px;
+                    transition: all 0.3s ease; /* add some transition */
+                    box-shadow: 0 2px 4px 0 rgba(161, 53, 53, 0.6);
+                }
+
+                div:active {
+                    transform: scale(0.94);
+                    border: 8px rgb(82, 58, 58) solid;
+                    background-color: rgb(186, 44, 44, 0.6);
+                }
+
+                figcaption {
+                    font-size: 15px;
+                    text-align: center;
+                }
+                }
             
         </style>
 
-        
-
-        
+            
     </head>
+    
     <body>
         <figure>
             <div class="bt"></div>
